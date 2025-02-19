@@ -10,25 +10,25 @@ const { title = "shasherazi's portfolio" } = Astro.props;
   <head>
     <Head title={title} />
   </head>
-  <body class="bg-bg text-text font-jetbrains tracking-tight overflow-x-hidden">
+  <body class="bg-bg text-text font-jetbrains tracking-tight overflow-x-hidden h-full">
     <nav class="nav fixed top-0 left-0 right-0 py-6 px-12 w-screen">
       <div class="flex gap-4">
         <a
           href="/"
-          class="text-accent text-lg underline max-md:text-xl max-sm:text-lg"
+          class="text-accent text-lg underline max-md:text-xl max-sm:text-base"
         >
           home</a
         >
         <a
           href="/blog"
-          class="text-accent text-lg underline max-md:text-xl max-sm:text-lg"
+          class="text-accent text-lg underline max-md:text-xl max-sm:text-base"
         >
           blog</a
         >
       </div>
     </nav>
     <main
-      class="py-20 px-56 max-lg:px-32 max-md:px-16 max-sm:px-8 h-screen min-h-screen"
+      class="py-20 px-56 max-lg:px-32 max-md:px-16 max-sm:px-8 min-h-screen"
     >
       <slot />
     </main>
