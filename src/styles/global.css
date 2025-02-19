@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-2p: 'Press Start 2P', sans-serif;
+  --font-pixelify: 'Pixelify Sans Variable', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
+  --color-bg: #000000;
+  --color-text: #F7F7F7;
+  --color-shading: #3F4E4F;
+  --color-accent: #C73659;
+}

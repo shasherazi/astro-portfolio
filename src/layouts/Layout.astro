@@ -1,22 +1,37 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import "../styles/global.css";
+import Head from "../components/Head.astro";
+import "@fontsource-variable/pixelify-sans";
+import "@fontsource-variable/inter"; // Supports weights 100-900
+import "@fontsource-variable/jetbrains-mono"; // Supports weights 100-800
+const { title = "shasherazi's portfolio" } = Astro.props;
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<html>
+  <head>
+    <Head title={title} />
+  </head>
+  <body class="bg-bg text-text font-jetbrains tracking-tighter">
+    <nav class="fixed top-0 left-0 right-0 py-6 px-12">
+      <div class="flex gap-4">
+        <a
+          href="/"
+          class="text-accent text-lg underline max-md:text-xl max-sm:text-lg"
+        >
+          home</a
+        >
+        <a
+          href="/blog"
+          class="text-accent text-lg underline max-md:text-xl max-sm:text-lg"
+        >
+          blog</a
+        >
+      </div>
+    </nav>
+    <main
+      class="py-20 px-56 max-lg:px-32 max-md:px-16 max-sm:px-8 h-screen min-h-screen"
+    >
+      <slot />
+    </main>
+  </body>
+</html>
