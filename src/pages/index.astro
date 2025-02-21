@@ -5,14 +5,14 @@ import PerlinNoise from "../components/PerlinNoise.astro";
 
 <Layout>
   <PerlinNoise />
-  <p class="text-xl max-sm:text-base">hi, im</p>
+  <p class="text-lg max-sm:text-base">hi, im</p>
   <div class="intro">
     <h1
       class="font-pixelify text-6xl max-md:text-5xl max-sm:text-4xl text-accent mt-[-0.25rem]"
     >
       shasherazi
     </h1>
-    <p class="text-xl max-sm:text-base mt-3 max-sm:mt-1">
+    <p class="text-lg max-sm:text-base mt-3 max-sm:mt-1">
       i am a
       <a
         href="https://github.com/shasherazi"
@@ -28,14 +28,14 @@ import PerlinNoise from "../components/PerlinNoise.astro";
     </p>
   </div>
 
-  <hr class="w-screen my-10 max-md:my-6 text-accent" />
+  <hr class="w-screen my-8 max-md:my-6 text-accent" />
 
   <div class="projects">
-    <p class="text-xl max-sm:text-base max-sm:mt-2">
+    <p class="text-lg max-sm:text-base max-sm:mt-2">
       ive made several projects since i started programming in 2021. you can
       visit my
       <a
-        href="https://github.com"
+        href="https://github.com/shasherazi"
         class="text-accent underline"
         target="_blank"
         rel="noopener noreferrer"
@@ -52,6 +52,13 @@ import PerlinNoise from "../components/PerlinNoise.astro";
           target="_blank"
           class="text-accent underline">Build a Rabbit Hole</a
         >, made with nextjs, supabase, and shadcn-ui
+      </li>
+      <li>
+        <a
+          href="https://what-if-time.vercel.app/"
+          target="_blank"
+          class="text-accent underline">What If Time</a
+        >, made with Astro, React, and shadcn-ui
       </li>
       <li>
         <a
@@ -76,9 +83,35 @@ import PerlinNoise from "../components/PerlinNoise.astro";
       </li>
     </ul>
 
-    <p class="text-xl max-sm:text-base mt-5 max-sm:mt-2">
+    <p class="text-lg max-sm:text-base mt-5 max-sm:mt-2">
       as you can see, most of my projects are web based. but im trying to get
-      more into the backend side, so expect some C (or maybe even rust) soon.
+      more into the backend side, so expect some python, C, or maybe even rust
+      soon.
+    </p>
+  </div>
+
+  <hr class="w-screen my-8 max-md:my-6 text-accent" />
+
+  <div class="contact">
+    <p class="text-lg max-sm:text-base mt-5 max-sm:mt-2">
+      you can reach out to me on
+      <ul class="list-disc list-inside mt-2 pl-4">
+        <li>
+          <a
+            href="https://twitter.com/shasherazi"
+            target="_blank"
+            class="text-accent underline">twitter</a
+          >
+          (im not calling it X)
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/in/shasherazi"
+            target="_blank"
+            class="text-accent underline">linkedin</a
+          >
+        </li>
+      </ul>
     </p>
   </div>
 </Layout>
