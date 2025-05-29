@@ -5,9 +5,9 @@
   --font-pixelify: 'Pixelify Sans Variable', sans-serif;
   --font-inter: 'Inter', sans-serif;
   --font-jetbrains: 'JetBrains Mono', monospace;
-  --color-bg: #000000;
-  --color-text: #F7F7F7;
+  --color-bg: #11111b;
+  --color-text: #cdd6f4;
   --color-shading: #3F4E4F;
   /* og red fav color */
-  --color-accent: #C73659;
+  --color-accent: #e64553;
 }
