@@ -7,7 +7,11 @@
   --font-jetbrains: 'JetBrains Mono', monospace;
   --color-bg: #11111b;
   --color-text: #cdd6f4;
-  --color-shading: #3F4E4F;
+  --color-selected: #45475a;
   /* og red fav color */
   --color-accent: #e64553;
+}
+
+::selection {
+  background-color: var(--color-selected);
 }
