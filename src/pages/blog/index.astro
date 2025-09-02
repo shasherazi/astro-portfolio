@@ -1,11 +1,34 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import BlogLink from "../../components/BlogLink.astro";
+
+interface Blog {
+  frontmatter: {
+    title: string;
+    date: string;
+    url: string;
+  };
+}
+
+const matches = import.meta.glob("./*.astro", { eager: true });
+const blogs: Blog[] = Object.values(matches) as Blog[];
 ---
 
-<Layout title="shasherazi's blog">
-  <div class="flex justify-center items-center h-full">
-    <h1 class="text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
-      🚧 under construction
+<Layout title="shasherazi's blogs">
+  <div class="flex flex-col gap-4 justify-center h-full">
+    <h1 class="text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl mb-4">
+      blogs
     </h1>
+    <ul>
+      {
+        blogs.map((blog) => (
+          <BlogLink
+            title={blog.frontmatter.title}
+            date={blog.frontmatter.date}
+            url={blog.frontmatter.url}
+          />
+        ))
+      }
+    </ul>
   </div>
 </Layout>
