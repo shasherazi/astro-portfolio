@@ -10,7 +10,7 @@ interface Blog {
   };
 }
 
-const matches = import.meta.glob("./*.astro", { eager: true });
+const matches = import.meta.glob("./*.md", { eager: true });
 const blogs: Blog[] = Object.values(matches) as Blog[];
 ---
 
